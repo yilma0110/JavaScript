@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos javascript</title>
+</head>
+
+<body>
+    <h1>Cadenas de texto (Strings)</h1>
+    
+
+    <script>
+        /*Cadenas de texto aka strings
+        let nombre = 'Yilma'
+        let apellido = 'Ruiz'
+        let hola = new String('Hola');
+        let texto = '                Miguel es un niño que sueña con ser músico, pero su familia se lo prohíbe porque su tatarabuelo, músico, los abandonó, y quieren obligar a Miguel a ser zapatero, como todos los miembros de la familia         .'
+
+        console.log(nombre, apellido, hola);
+        console.log(nombre.length, apellido.length, hola.length);
+
+        //Mayusculas - Minusculas
+        console.log(nombre.toUpperCase());
+        console.log(apellido.toLocaleLowerCase());
+
+        //Buscar texto
+        console.log(texto.includes("familia"));
+        console.log(texto.includes("maria"));
+
+        console.log(texto);
+        console.log(texto.trim());
+        console.log(texto.split(","));
+        */
+
+        //CONCATENACIÓN
+        let nombre = "Yilma";
+        let apellido = "Ruiz";
+
+        let hola = "Hola mi nombre es " + nombre + " " + apellido;
+        console.log(hola);
+
+        //INTERPOLACIÓN DE VARIABLES
+        //TEMPLATE STRING ACENTO INVERTIDO : ALT 96
+        let hola2 = `Hola mi nombre es ${nombre} ${apellido}`;
+        console.log(hola2);
+
+        let ul = `
+        <ul>
+            <li>Primavera</li>
+            <li>Verano</li>
+            <li>Otoño</li>
+            <li>Invierno</li>
+        </ul>`;
+
+        console.log(ul);
+ 
+
+    </script>
+</body>
+
+</html>

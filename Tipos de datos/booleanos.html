@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos javascript</title>
+</head>
+
+<body>
+    <h1>VALORES BOOLEANOS</h1>
+
+    <script>
+        // DATOS BOOLEANOS   -------------------------------------------------------------
+        let verdadero = true;
+        let falso = false;
+
+        console.log(typeof(verdadero));
+
+        /*Valores que tienden a verdadero TRUELY:
+        if(true) 
+        if({}) -> objeto vacío
+        if([]) -> arreglo vacío
+        if("hols") -> cadena de texto
+        if(new Date()) -> una fecha
+        if(-10, 10) -> num negativo
+        if(infinity, -infinity) */
+
+        /*Valores que tienden a falso FALSY:
+        if(falso)
+        if(null) -> valores nulos
+        if(undefined)
+        if(0)
+        if(NaN) -> No un número
+        if("", '') -> cadena de texto vacía
+        if(document.all)*/
+
+        console.log(Boolean("Hola"));
+        console.log(Boolean(-4.5));
+        console.log(Boolean(''));
+        console.log(Boolean(0));
+
+
+    </script>
+
+</body>
+</html>
