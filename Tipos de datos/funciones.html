@@ -11,12 +11,43 @@
     <h1>FUNCIONES</h1>
 
     <script>
-        //FUNCION DECLARADA
-        function miFuncion(){
-            console.log("Uno");
-            console.log("Dos");
 
+        //El reto es encontrar el string x que, al aplicarle la función hash, produciría como resultado el siguiente número 
+        //entero:10977902408482.
+
+        function hash(x) { 
+            seed = 79; 
+            diccionario = "abefimnoprsuv"; // 0 - 12
+            for(i = 0; i < x.length; i++) { 
+                seed = (seed * 13 + diccionario.indexOf(x[i])); 
+            } 
+            return seed; 
         }
+
+        console.log(hash("perseverar"));
+        
+
+        function hash2(seed){
+            palabra ="";
+            diccionario = "abefimnoprsuv"; // 0 - 12
+            
+            for(i = 0; i < 10; i++){
+                indice = seed % 13;
+
+                seed = seed - indice;
+                seed = seed / 13;
+
+                palabra = palabra + diccionario.substr(indice,1)
+
+                //console.log("indice ",indice)
+                //console.log("seed ",seed)
+                
+            }
+
+            return [...palabra].reverse().join("");
+        }
+    
+        console.log(hash2(10977902408482));
 
     </script>
 
